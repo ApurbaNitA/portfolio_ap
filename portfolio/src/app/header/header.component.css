@@ -1,0 +1,16 @@
+.nav-link {
+    padding: 10px 5px;
+    transition: 0.2s
+}
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #1a1a18;
+    transition: 0.4s
+}
+
+.nav-item:hover::after {
+    width: 100%
+}
