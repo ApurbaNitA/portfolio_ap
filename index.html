@@ -60,7 +60,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Apurba and I'm a <span class="typing-2"></span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                    <p>I am a passionate software engineer with expertise in AngularJS and ReactJS for front-end development and Java for backend solutions. My dedication to crafting seamless user interfaces and robust backend systems fuels my love for coding. Beyond the screen, I am an avid sports enthusiast, engaging in cricket and badminton, fostering a healthy and active lifestyle. Painting is my creative escape, allowing me to express emotions through vibrant strokes. Adventure fuels my spirit, especially through thrilling bike rides that satisfy my love for exploration. Alongside my tech endeavors, I run an educational YouTube channel, where I share insights and knowledge, contributing to the learning community. This multifaceted journey reflects my commitment to continuous learning, creativity, and a zest for life's diverse experiences.</p>
                     <a href="images/cv.pdf" target="_blank">Download CV</a>
                 </div>
             </div>
@@ -72,25 +72,25 @@
         <div class="max-width">
             <h2 class="title">My Works</h2>
             <div class="serv-content">
-                <div class="card">
+                <div class="card" onclick="window.open('https://www.youtube.com/@PlacementBuddies', '_blank');" style="cursor: pointer;">
                     <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Project 1</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <i class="fa-brands fa-youtube"></i>
+                        <div class="text">YouTube</div>
+                        <p>Explore educational excellence on PlacementBuddies—your gateway to insightful tutorials, career guidance, and academic empowerment. 🎓✨</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="window.open('https://www.linkedin.com/in/apurba-podder-a6752b1a9/', '_blank');" style="cursor: pointer;">
                     <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Project 2</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div class="text">LinkedIn</div>
+                        <p>Explore my professional journey and connect on LinkedIn for industry insights, networking, and collaboration opportunities.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="window.open('https://www.instagram.com/apurbapodder_arts/?hl=en', '_blank');" style="cursor: pointer;">
                     <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Project 3</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <i class="fa-brands fa-instagram"></i>
+                        <div class="text">Instagram</div>
+                        <p>Explore my creative world on Instagram, where art comes to life in vibrant colors and unique expressions. 🎨✨ #ArtisticJourney</p>
                     </div>
                 </div>
                </div>
@@ -105,9 +105,26 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
-                    <a href="#">Read more</a>
+                    <p class="short-description">As a seasoned software engineer with over 2 years of experience, I specialize in crafting innovative solutions using Angular JS and React JS for captivating user interfaces, complemented by Java for robust backend development.</p>
+                    <p class="full-description" style="display: none;">As a seasoned software engineer with over 2 years of experience, I specialize in crafting innovative solutions using Angular JS and React JS for captivating user interfaces, complemented by Java for robust backend development. My creative prowess extends to designing seamless and efficient systems, ensuring a harmonious synergy between frontend and backend technologies. With a passion for pushing technological boundaries, I bring a wealth of hands-on experience, problem-solving acumen, and a commitment to delivering software solutions that stand at the intersection of cutting-edge technology and user-centric design.</p>
+                    <a  onclick="toggleDescription()">Read more</a>
                 </div>
+                
+                <script>
+                    function toggleDescription() {
+                        var shortDescription = document.querySelector('.short-description');
+                        var fullDescription = document.querySelector('.full-description');
+                
+                        if (shortDescription.style.display === 'none') {
+                            shortDescription.style.display = 'block';
+                            fullDescription.style.display = 'none';
+                        } else {
+                            shortDescription.style.display = 'none';
+                            fullDescription.style.display = 'block';
+                        }
+                    }
+                </script>
+                
                 <div class="column right">
                     <div class="bars">
                         <div class="info">
@@ -200,7 +217,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <p>For inquiries or collaboration opportunities, feel free to contact me. Let's connect and create something amazing together!</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -227,29 +244,31 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSddSSbxX3B0tPeTtl55SCFn4ZGjUsWRu_e70GXaIzi3k0o1LQ/viewform?usp=sf_link" method="GET" target="_blank">
+                        <!-- Your existing form fields here -->
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" name="entry.123456789" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="entry.987654321" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="entry.456789012" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea name="entry.345678901" cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
-                            <!-- <button><i class="fa-brands fa-whatsapp"></i> Whatsapp</button> -->
                             &nbsp;
-                            <a type="button" class="btn btn-success" href="https://wa.me/918837271465" target="_blank">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-whatsapp"></i> &nbsp;Whatsapp</a>
+                            <a type="button" class="btn btn-success" href="https://wa.me/918837271465" target="_blank">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-whatsapp"></i> &nbsp;Whatsapp
+                            </a>
                         </div>
-                        
                     </form>
+                    
                 </div>
             </div>
         </div>
@@ -257,8 +276,11 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="https://github.com/ApurbaNitA">Apurba Podder</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+        <span>Created By <a href="https://github.com/ApurbaNitA">Apurba Podder</a> | <span id="copyright-year" class="far fa-copyright"></span> All rights reserved.</span>
     </footer>
+    
+   
+    
 
     <script src="script.js"></script>
 </body>

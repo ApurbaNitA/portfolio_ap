@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
     $(window).scroll(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){
@@ -35,14 +36,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["YouTuber", "Developer", "Painter", "Web-Designer", "Freelancer"],
+        strings: ["Web-Developer", "Content Creator", "Sportsman", "Painter"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Painter", "Web-Designer", "Freelancer"],
+        strings: ["Web-Developer", "Content Creator", "Sportsman", "Painter"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
