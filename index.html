@@ -73,7 +73,8 @@
                         insights and knowledge, contributing to the learning community. This multifaceted journey
                         reflects my commitment to continuous learning, creativity, and a zest for life's diverse
                         experiences.</p>
-                    <a href="images/cv.pdf" target="_blank">Download CV</a>
+                    <a href="https://docs.google.com/document/d/1W_J4suzaGvru5XORwvKq5rONhMfr600bQZub3pIoDUI/edit?usp=sharing"
+                        target="_blank">Download CV</a>
                 </div>
             </div>
         </div>
@@ -124,12 +125,45 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p class="short-description">As a seasoned software engineer with over 2 years of experience, I
-                        specialize in crafting innovative solutions using Angular JS and React JS for captivating user
-                        interfaces, complemented by Java for robust backend development.</p>
-                    <p class="full-description" style="display: none;">As a seasoned software engineer with over 2 years
-                        of experience, I specialize in crafting innovative solutions using Angular JS and React JS for
-                        captivating user interfaces, complemented by Java for robust backend development. My creative
+                    <!-- JavaScript to calculate the experience duration -->
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            function calculateExperience() {
+                                var startDate = new Date('August 1, 2021'); // Set the start date
+                                var currentDate = new Date(); // Get the current date
+
+                                // Calculate the difference in years and months
+                                var diffInMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+                                    (currentDate.getMonth() - startDate.getMonth());
+
+                                var years = Math.floor(diffInMonths / 12);
+                                var months = diffInMonths % 12;
+
+                                // Display the calculated experience duration in both short and full descriptions
+                                var experienceElementShort = document.getElementById('experience-duration-short');
+                                var experienceElementFull = document.getElementById('experience-duration-full');
+
+                                if (experienceElementShort && experienceElementFull) {
+                                    experienceElementShort.innerText = years + ' years and ' + months + ' months';
+                                    experienceElementFull.innerText = years + ' years and ' + months + ' months';
+                                }
+                            }
+
+                            // Call the function to calculate and display experience duration
+                            calculateExperience();
+                        });
+                    </script>
+
+                    <!-- Display the calculated experience duration -->
+                    <p class="short-description">
+                        As a seasoned software engineer with over <span id="experience-duration-short"></span> of experience,
+                        I specialize in crafting innovative solutions using Angular JS and React JS for captivating user
+                        interfaces, complemented by Java for robust backend development.
+                    </p>
+                    <p class="full-description" style="display: none;">As a seasoned software engineer with over <span
+                            id="experience-duration-full"></span> of experience,
+                        I specialize in crafting innovative solutions using Angular JS and React JS for captivating user
+                        interfaces, complemented by Java for robust backend development. My creative
                         prowess extends to designing seamless and efficient systems, ensuring a harmonious synergy
                         between frontend and backend technologies. With a passion for pushing technological boundaries,
                         I bring a wealth of hands-on experience, problem-solving acumen, and a commitment to delivering
